@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts>    
+
+    
+    <package name="default" extends="struts-default">  
+        
+
+        <action name="register" class="UserBean.User">  
+            <result name="success">success.jsp</result>  
+            <result name="error">error.jsp</result>  
+        </action> 
+        
+        <action name="delete" class="UserBean.User2">  
+            <result name="success">success.jsp</result>  
+            <result name="error">error.jsp</result>  
+        </action> 
+        
+       <action name="update" class="UserBean.User3">  
+            <result name="success">success.jsp</result>  
+            <result name="error">error.jsp</result>  
+        </action>  
+        
+        <action name="viewrecords" class="UserBean.FetchRecords">  
+            <result name="view">view_members.jsp</result>  
+        </action>  
+          
+          
+    </package>  
+    
+    <include file="first/struts-first.xml"></include>  
+ 
+    
+</struts>    
